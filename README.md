@@ -1,4 +1,4 @@
-Hello, im Dylan U+1F44B
+Hello, im Dylan &#128075;
 
 This little project was created using vanilla Javascript and a simple grid layout.
 
