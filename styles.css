@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Silkscreen', cursive;
+    font-weight: normal;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    background-image: url('./images/cyberpunk-sunset-grid-mountains-4k-jg-1920x1080.jpg');
+    background-position: top center;
+  }
+  
+  .calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+  }
+  
+  .calculator-grid > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid #4d34ac;
+    outline: none;
+    background-color: #14071c;
+    color: #fbc22f;
+  }
+  
+  .calculator-grid > button:hover {
+    background-color: #fbc22f;
+    color: #4d34ac; 
+  }
+  
+  .calculator-grid .span-two {
+    grid-column: span 2;
+    color: #1d75d0;
+  }
+
+  .calculator-grid .span-two:hover {
+    grid-column: span 2;
+    background-color: #1d75d0;
+    color: #fbc22f;
+  }
+
+  .calculator-grid .operation {
+    color: #f14b25;
+  }
+  
+  .calculator-grid .operation:hover {
+    background-color: #f14b25;
+    color: #fbc22f;
+  }
+
+  .output {
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, .75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+  
+  .output .previous-operand {
+    color: #f14b25;
+    font-size: 1.5rem;
+  }
+  
+  .output .current-operand {
+    color: #fbc22f;
+    font-size: 2.5rem;
+  }
